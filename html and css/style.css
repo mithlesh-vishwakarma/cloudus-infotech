@@ -1,0 +1,42 @@
+* {
+  font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+  color: #1f1f1f;
+}
+
+.main-container {
+  padding: 50px 150px 20px 150px;
+  border: 1px solid black;
+}
+.main-lists {
+  list-style-type: none;
+  counter-reset: section;
+}
+.sub-lists {
+  list-style-type: none;
+  counter-reset: section;
+}
+.mainlist-items {
+  counter-increment: section;
+}
+.sublist-items {
+  counter-increment: section;
+  line-height: 1.6;
+}
+
+.sublist-items::before {
+  content: counters(section, '.') '';
+}
+.list-items {
+  list-style: disc;
+  line-height: 1.6;
+}
+.steplists {
+  list-style: none;
+}
+.substeplists {
+  list-style-type: disc;
+  line-height: 1.6;
+}
+.ruleslist-items {
+  line-height: 1.6;
+}
