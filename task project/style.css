@@ -1,0 +1,81 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Cabin Sketch", sans-serif;
+  font-style: normal;
+}
+
+/* ============ Header ===================== */
+
+header {
+  padding: 5px;
+  margin-bottom: 20px;
+}
+nav {
+  display: flex;
+  position: relative;
+  background-color: rgb(23, 85, 139);
+  height: 50px;
+  width: 100%;
+  align-items: center;
+}
+.nav-left {
+  padding: 2px;
+}
+img {
+  width: 45px;
+  height: 45px;
+}
+
+.nav-right {
+  gap: 2px;
+  position: absolute;
+  right: 50px;
+}
+.nav-lists {
+  display: flex;
+  gap: 20px;
+}
+.nav-items {
+  list-style: none;
+  color: white;
+  font-weight: 200;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* =========== main container ================ */
+
+main {
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+h3 {
+  color: blue;
+  margin-bottom: 10px;
+  font-weight: 400;
+}
+
+.left-section {
+  font-weight: 200;
+  gap: 20px;
+}
+input {
+  padding: 5px;
+}
+input::hover {
+  border-color: rgb(213, 224, 232);
+}
+select {
+  padding: 5px;
+}
+button {
+  background-color: green;
+  padding: 5px;
+  color: white;
+}

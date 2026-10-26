@@ -1,0 +1,8 @@
+Step 2: Start building the Task Board:
+-----------------------------------------
+Now use what you learned. This is a static page only, no JavaScript this week. All tasks are written directly in the HTML.
+-Page structure using semantic tags (header, main, ul, li)
+-Add-task form with a text input, a priority dropdown and an Add button
+-A list of at least 5 tasks, each with a checkbox, title, priority badge and delete button
+-A stats bar showing total, done and high-priority tasks
+-Basic styling: colours, fonts, spacing and coloured priority badges
