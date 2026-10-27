@@ -74,8 +74,30 @@ input::hover {
 select {
   padding: 5px;
 }
-button {
+#submit-btn {
   background-color: green;
   padding: 5px;
   color: white;
+}
+/* ==================  right section ============== */
+
+#delete-btn {
+  background-color: red;
+  padding: 5px;
+  color: white;
+}
+#edit-btn {
+  background-color: yellowgreen;
+  padding: 5px;
+  color: white;
+}
+
+table,
+th,
+td {
+  border: 1px solid;
+  padding: 5px;
+}
+table {
+  border-collapse: collapse;
 }
