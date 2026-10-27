@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ================================= menubar header =========================== -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <span><img src="./logo-task.webp" alt="LOGO" /></span>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li class="nav-items"><a href="./form.html">Create Task</a></li>
+            <li class="nav-items"><a href="./index.html">Task List</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <div>
+        <a href="./index.html"> <span class="btn back-btn">< Back</span> </a>
+      </div>
+      <div class="task-detail-view-div">
+        <h2>Task Details:</h2>
+        <hr />
+        <div class="title-div">
+          <h3>
+            <span>Title:</span>
+            <span class="view-page-title"> A list of at least 5 tasks </span>
+          </h3>
+        </div>
+        <div>
+          <h3>
+            <span>Priority:</span
+            ><span class="priority-pills medium viewpage"> Medium</span>
+          </h3>
+        </div>
+        <div>
+          <h3>
+            <span>Status:</span
+            ><span class="Status-pills pending viewpage"> Pending</span>
+          </h3>
+        </div>
+        <div class="btn-viewpage">
+          <input
+            type="button"
+            value="Edit"
+            id="edit-btn"
+            class="btn btn-edit"
+          />
+          <input
+            type="button"
+            value="Delete"
+            id="delete-btn"
+            class="btn btn-delete"
+          />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

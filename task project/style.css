@@ -175,6 +175,20 @@ table {
   background-color: #fae7f5;
   border: 1px solid #f3bee3;
 }
+
+.Status-pills {
+  padding: 2px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 80px;
+  font-size: 12px;
+  justify-content: center;
+  text-align: center;
+}
+.pending {
+  color: #d1d114;
+  border: 1px solid #4d8e08;
+}
 .text-center {
   text-align: center;
 }
@@ -208,6 +222,45 @@ table {
   color: red;
 }
 
+/* ================== detail tasks view ====== */
+
+.task-detail-view-div {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid blue;
+  padding: 25px 20px;
+}
+
+.title-div {
+  margin-bottom: 10px;
+}
+.view-page-title {
+  font-size: 18px;
+  color: black;
+}
+.viewpage {
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.btn-viewpage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-btn {
+  border: 1px solid black;
+  padding: 2px 6px;
+  color: black;
+}
+.back-btn:hover {
+  border: 2px solid black;
+  padding: 2px 6px;
+  color: white;
+  background-color: black;
+}
+
 /* ================ media query responsivness ======== */
 
 @media screen and (max-width: 767px) {
@@ -228,5 +281,33 @@ table {
 
   .stats-boxes {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .task-detail-view-div {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid blue;
+    padding: 12px 25px;
+  }
+
+  .title-div {
+    margin-bottom: 10px;
+  }
+  .viewpage {
+    font-size: 13px;
+  }
+  .view-page-title {
+    font-size: 16px;
+    color: black;
+  }
+  .btn-viewpage {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h3 {
+    color: blue;
+    margin-bottom: 10px;
+    font-weight: 200;
   }
 }
