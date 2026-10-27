@@ -23,8 +23,8 @@
         </div>
         <div class="nav-right">
           <ul class="nav-links">
-            <li class="nav-items"><a href="#">Create Task</a></li>
-            <li class="nav-items"><a href="#">Task List</a></li>
+            <li class="nav-items"><a href="./form.html">Create Task</a></li>
+            <li class="nav-items"><a href="./index.html">Task List</a></li>
           </ul>
         </div>
       </nav>
@@ -33,27 +33,30 @@
     <!-- ====================== main page container ================================= -->
 
     <main class="main-container">
-      <div class="left-section">
-        <h3>Add a Task:</h3>
+      <!-- ============================= stats bar or cards ======================== -->
 
-        <!-- ============================= form left section ==================== -->
-        <form action="">
-          <label for="">Task Name:</label>
-          <input type="text" />
-          <select name="" id="">
-            <option value="" selected>---Give Priority---</option>
-            <option value="">Low</option>
-            <option value="">Medium</option>
-            <option value="">High</option>
-            <option value="">Very High</option>
-            <option value="">Emergency</option>
-          </select>
-          <button type="submit" id="submit-btn" class="btn btn-submit">
-            Add To Task List
-          </button>
-        </form>
+      <div class="stats-boxes">
+        <div class="stats-box total-tasks">
+          <div><h3>Total Tasks:</h3></div>
+          <div><h2>40</h2></div>
+        </div>
+        <div class="stats-box pending-tasks">
+          <div><h3>Total Pending:</h3></div>
+          <div><h2>9</h2></div>
+        </div>
+        <div class="stats-box completed-tasks">
+          <div><h3>Total completed:</h3></div>
+          <div>
+            <h2>31</h2>
+          </div>
+        </div>
+        <div class="stats-box priority-tasks">
+          <div><h3>High Priority Tasks:</h3></div>
+          <div>
+            <h2>4</h2>
+          </div>
+        </div>
       </div>
-      <hr />
 
       <!-- ===============================   right section table ========================== -->
       <div class="right-section">
@@ -305,32 +308,6 @@
             </tr>
           </tbody>
         </table>
-        <hr />
-
-        <!-- ============================= stats bar or cards ======================== -->
-
-        <div class="stats-boxes">
-          <div class="stats-box total-tasks">
-            <div><h3>Total Tasks:</h3></div>
-            <div><h2>40</h2></div>
-          </div>
-          <div class="stats-box pending-tasks">
-            <div><h3>Total Pending:</h3></div>
-            <div><h2>9</h2></div>
-          </div>
-          <div class="stats-box completed-tasks">
-            <div><h3>Total completed:</h3></div>
-            <div>
-              <h2>31</h2>
-            </div>
-          </div>
-          <div class="stats-box priority-tasks">
-            <div><h3>High Priority Tasks:</h3></div>
-            <div>
-              <h2>4</h2>
-            </div>
-          </div>
-        </div>
       </div>
     </main>
   </body>
