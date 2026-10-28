@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- ============================== body of the project ======================= -->
+  <body>
+    <!-- ================================= menubar header =========================== -->
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <span><img src="./logo-task.webp" alt="LOGO" /></span>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li class="nav-items"><a href="./form.html">Create Task</a></li>
+            <li class="nav-items"><a href="./index.html">Task List</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- ====================== main page container ================================= -->
+
+    <main class="main-container">
+      <!-- ============================= stats bar or cards ======================== -->
+
+      <div class="stats-boxes">
+        <div class="stats-box total-tasks">
+          <div><h3>Total Tasks:</h3></div>
+          <div><h2>40</h2></div>
+        </div>
+        <div class="stats-box pending-tasks">
+          <div><h3>Total Pending:</h3></div>
+          <div><h2>9</h2></div>
+        </div>
+        <div class="stats-box completed-tasks">
+          <div><h3>Total completed:</h3></div>
+          <div>
+            <h2>31</h2>
+          </div>
+        </div>
+        <div class="stats-box priority-tasks">
+          <div><h3>High Priority Tasks:</h3></div>
+          <div>
+            <h2>4</h2>
+          </div>
+        </div>
+      </div>
+
+      <!-- ===============================   right section table ========================== -->
+      <div class="right-section">
+        <h3>Task Lists:</h3>
+        <table>
+          <thead>
+            <th>Check</th>
+            <th>Task Name</th>
+            <th>Priority</th>
+            <th colspan="2">Actions</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>A header</td>
+              <td class="text-center">
+                <span class="priority-pills high"> High</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task1.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                An add-task form with a text input, a priority dropdown and an
+                Add button
+              </td>
+              <td class="text-center">
+                <span class="priority-pills high"> High</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task2.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>A list of at least 5 tasks</td>
+              <td class="text-center">
+                <span class="priority-pills medium"> Medium</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task3.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                Each task showing a checkbox, the title, a coloured priority
+                badge and a delete button
+              </td>
+              <td class="text-center">
+                <span class="priority-pills low"> Low</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task4.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                A stats bar showing total tasks, done tasks and high-priority
+                tasks
+              </td>
+              <td class="text-center">
+                <span class="priority-pills low"> Low</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task5.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>TA simple detail view for one task</td>
+              <td class="text-center">
+                <span class="priority-pills medium"> Medium</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task6.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>
+                Semantic tags used properly (header, main, ul, li), not div for
+                everything
+              </td>
+              <td class="text-center">
+                <span class="priority-pills emergency"> Emergency</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task7.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>Works on a mobile screen without horizontal scrolling</td>
+              <td class="text-center">
+                <span class="priority-pills low"> Low</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task8.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+            <tr>
+              <td class="text-center">
+                <input type="checkbox" name="" id="" />
+              </td>
+              <td>Pushed to your repo with at least 8 meaningful commits</td>
+              <td class="text-center">
+                <span class="priority-pills very-high"> Very High</span>
+              </td>
+              <td>
+                <input
+                  type="button"
+                  value="Delete"
+                  id="delete-btn"
+                  class="btn btn-delete"
+                />
+              </td>
+              <td>
+                <a href="./Task9.html">
+                  <input
+                    type="button"
+                    value="Edit"
+                    id="edit-btn"
+                    class="btn btn-edit"
+                /></a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
