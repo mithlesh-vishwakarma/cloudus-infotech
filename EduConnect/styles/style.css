@@ -1,0 +1,133 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* ===================== home page css ================================ */
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 8px 15px;
+  background-color: rgba(9, 9, 71, 0.863);
+  color: white;
+  max-width: 1800px;
+}
+img {
+  width: 70px;
+  height: 70px;
+}
+/* .logo {
+  padding: px;
+} */
+.nav-lists {
+  display: flex;
+  font-size: 20px;
+}
+
+.nav-items {
+  list-style: none;
+  color: white;
+  padding: 2px;
+}
+a {
+  text-decoration: none;
+  color: white;
+}
+.right-nav {
+  display: flex;
+  width: 400px;
+  justify-content: space-evenly;
+  padding: 2px;
+}
+.btn {
+  padding: 10px;
+  border: 1px solid rgba(9, 9, 71, 0.863);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.btn-login {
+  background-color: rgb(204, 204, 28);
+}
+.btn-login:hover {
+  background-color: rgba(9, 9, 71, 0.863);
+  color: white;
+  border: 1px solid white;
+}
+.btn-signup {
+  background-color: rgb(204, 204, 28);
+}
+.btn-signup:hover {
+  background-color: rgba(9, 9, 71, 0.863);
+  color: white;
+  border: 1px solid white;
+}
+.search {
+  padding: 10px;
+  border: 1px solid rgba(9, 9, 71, 0.863);
+  border-radius: 20px;
+  width: 220px;
+}
+.center-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 400px;
+  padding: 10px;
+  margin-right: 20px;
+}
+
+/* ===================== Hero section ================== */
+.hero-section {
+  background-image: url(../media/first-section-image.png);
+  display: flex;
+  background-color: aliceblue;
+  height: 600px;
+  justify-content: space-between;
+  background-position: center;
+}
+.left-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  margin-bottom: 30px;
+}
+.title-first {
+  font-size: 60px;
+}
+.title-second {
+  font-size: 60px;
+  color: rgba(9, 9, 71, 0.863);
+}
+.description {
+  font-size: 20px;
+}
+.right-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  padding: 40px;
+}
+.right-section-experiance-stat {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.right-section-experiance-stat > div > h1 {
+  margin-bottom: 10px;
+  font-size: 40px;
+}
+
+/* ==================== media queries ================= */
+
+/* @media screen (max-width:){
+  
+} */

@@ -24,7 +24,7 @@
 }
 
 .sublist-items::before {
-  content: counters(section, '.') '';
+  content: counters(section, ".") "";
 }
 .list-items {
   list-style: disc;
