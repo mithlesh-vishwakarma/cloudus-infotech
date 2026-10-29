@@ -1,6 +1,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: sans-serif;
 }
 
 /* ===================== home page css ================================ */
@@ -9,18 +10,21 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 8px 15px;
+  padding: 10px 15px;
   background-color: rgba(9, 9, 71, 0.863);
   color: white;
   max-width: 1800px;
 }
 img {
-  width: 70px;
-  height: 70px;
+  width: 50px;
+  height: 35px;
 }
-/* .logo {
-  padding: px;
-} */
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .nav-lists {
   display: flex;
   font-size: 20px;
@@ -77,41 +81,65 @@ a {
   margin-right: 20px;
 }
 
+.main-container {
+  max-width: 1800px;
+}
+
 /* ===================== Hero section ================== */
 .hero-section {
   background-image: url(../media/first-section-image.png);
   display: flex;
   background-color: aliceblue;
   height: 600px;
-  justify-content: space-between;
+  justify-content: space-around;
   background-position: center;
 }
 .left-section {
-  padding: 20px;
+  padding: 8px 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 600px;
+}
+.left-section-btn {
+  display: flex;
+  left: 0;
+  gap: 10px;
+  width: 600px;
+}
+.explore-btn {
+  background-color: rgba(9, 9, 71, 0.863);
+  color: white;
+}
+.explore-btn:hover {
+  background-color: white;
+  border: 1px solid rgba(9, 9, 71, 0.863);
+  color: rgba(9, 9, 71, 0.863);
 }
 .title {
   margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 .title-first {
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: 700;
 }
 .title-second {
-  font-size: 60px;
+  font-size: 70px;
+  font-weight: 700;
   color: rgba(9, 9, 71, 0.863);
 }
 .description {
-  font-size: 20px;
+  font-size: 30px;
+  font-weight: 200;
 }
 .right-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* align-items: center; */
-  padding: 40px;
+  padding: 8px 15px;
 }
 .right-section-experiance-stat {
   background-color: white;
@@ -123,9 +151,94 @@ a {
 }
 .right-section-experiance-stat > div > h1 {
   margin-bottom: 10px;
-  font-size: 40px;
+  font-size: 50px;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
+/* ================ course section ============ */
+.course-section {
+  display: flex;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 10px 90px;
+  gap: 15px;
+}
+.course-card {
+  /* border: 1px solid black; */
+  overflow: hidden;
+  padding: 5px;
+}
+.course-image {
+  width: 100%;
+  height: 200px;
+}
+.instructor-name {
+  color: gray;
+  font-size: 13px;
+  /* font-weight: 100; */
+}
+.ratings {
+  color: rgb(172, 172, 0);
+  font-size: 13px;
+}
+.rating-count {
+  color: gray;
+  font-size: 13px;
+}
+.duration-level {
+  color: gray;
+  font-size: 12px;
+}
+.price {
+  font-size: 20px;
+  font-weight: 900;
+}
+.price-strikethrough {
+  text-decoration: line-through;
+  color: gray;
+}
+.detail-btn {
+  background-color: rgba(9, 9, 71, 0.863);
+  color: white;
+  margin-left: 20px;
+}
+
+/* ======================= footer ================= */
+footer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  background-color: rgba(9, 9, 71, 0.863);
+  color: white;
+  padding: 30px;
+}
+.social-icons-list {
+  list-style: none;
+  display: flex;
+  margin-top: 20px;
+}
+.quick-links {
+  list-style: none;
+}
+.footer-courses-list {
+  list-style: none;
+}
+.contact-footer {
+  list-style: none;
+}
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0px 20px;
+}
+.logo-footer {
+  width: 100px;
+  height: 60px;
+}
 /* ==================== media queries ================= */
 
 /* @media screen (max-width:){
