@@ -16,8 +16,8 @@
   max-width: 1800px;
 }
 img {
-  width: 50px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
 }
 .logo {
   display: flex;
@@ -42,8 +42,10 @@ a {
 .right-nav {
   display: flex;
   width: 400px;
-  justify-content: space-evenly;
   padding: 2px;
+  justify-content: flex-end;
+  gap: 10px;
+  align-items: center;
 }
 .btn {
   padding: 10px;
@@ -67,11 +69,19 @@ a {
   color: white;
   border: 1px solid white;
 }
+.hamburger-icon {
+  width: 40px;
+  height: 40px;
+}
 .search {
   padding: 10px;
   border: 1px solid rgba(9, 9, 71, 0.863);
-  border-radius: 20px;
-  width: 220px;
+  border-radius: 15px;
+  width: 350px;
+  margin-top: 20px;
+}
+.search:hover {
+  border: 1px solid darkblue;
 }
 .center-nav {
   display: flex;
@@ -163,12 +173,16 @@ a {
 
 .courses-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  padding: 10px 90px;
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 200px;
+  gap: 40px;
 }
 .course-card {
   /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
   overflow: hidden;
   padding: 5px;
 }
@@ -179,23 +193,28 @@ a {
 .instructor-name {
   color: gray;
   font-size: 13px;
+  /* margin-top: 5px; */
   /* font-weight: 100; */
 }
 .ratings {
   color: rgb(172, 172, 0);
   font-size: 13px;
+  /* margin-top: 10px; */
 }
 .rating-count {
   color: gray;
   font-size: 13px;
+  /* margin-top: 20px; */
 }
 .duration-level {
   color: gray;
   font-size: 12px;
+  /* margin-top: 20px; */
 }
 .price {
   font-size: 20px;
   font-weight: 900;
+  /* margin-top: 30px; */
 }
 .price-strikethrough {
   text-decoration: line-through;
@@ -219,18 +238,68 @@ footer {
   list-style: none;
   display: flex;
   margin-top: 20px;
+  gap: 10px;
+}
+.insta {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+.insta:hover {
+  background-color: rgb(204, 204, 28);
+}
+.facebook {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+.facebook:hover {
+  background-color: rgb(204, 204, 28);
+}
+.youtube {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+.youtube:hover {
+  background-color: rgb(204, 204, 28);
+}
+.linkdin {
+  height: 30px;
+  width: 30px;
+  padding: 2px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+}
+.linkdin:hover {
+  background-color: rgb(204, 204, 28);
 }
 .quick-links {
   list-style: none;
+  line-height: 25px;
+  /* gap: 20px; */
 }
 .footer-courses-list {
   list-style: none;
+  line-height: 25px;
 }
 .contact-footer {
   list-style: none;
+  line-height: 25px;
 }
 .left-footer {
   display: flex;
+  gap: 5px;
   flex-direction: column;
   justify-content: center;
   padding: 0px 20px;
@@ -239,8 +308,72 @@ footer {
   width: 100px;
   height: 60px;
 }
+.footer-description {
+  line-height: 25px;
+}
+.Newsletter-div {
+  /* position: absolute; */
+}
+.subscribe-line {
+  line-height: 25px;
+}
+.subscribe-input {
+  padding: 10px;
+  border: 1px solid darkblue;
+  border-radius: 15px;
+  width: 200px;
+  color: white;
+}
+
+.subscribe-input:hover {
+  border: 1px solid red;
+  background-color: rgb(204, 204, 28);
+}
+.submit-icon {
+  height: 30px;
+  width: 30px;
+  padding: 1px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.submit-icon:hover {
+  background-color: rgb(204, 204, 28);
+}
+.icon-lists {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
 /* ==================== media queries ================= */
 
-/* @media screen (max-width:){
-  
-} */
+@media (max-width: 1440px) {
+  .hamburger-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 375px) {
+  .courses-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  footer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

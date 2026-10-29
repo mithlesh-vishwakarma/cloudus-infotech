@@ -1,0 +1,540 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>EduConnect</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- <nav class="bg-cyan-950 flex justify-center gap-80 item-center px-2 py-4"> -->
+        <div class="logo">
+          <span>
+            <a href="#"
+              ><img
+                src="../media/logo.png"
+                alt="EduConnect-Logo"
+                srcset=""
+              /> </a></span
+          ><span><h4>EduConnect</h4></span>
+        </div>
+
+        <div>
+          <ul class="nav-lists">
+            <div class="center-nav">
+              <li class="nav-items"><a href="#">Home</a></li>
+              <li class="nav-items">
+                <a href="../pages/CourseListingPage.html">Courses</a>
+              </li>
+              <li class="nav-items"><a href="#">About Us</a></li>
+              <li class="nav-items"><a href="#">Contact</a></li>
+            </div>
+
+            <div class="right-nav">
+              <li class="nav-items">
+                <a href="#"
+                  ><input type="button" value="Login" class="btn btn-login"
+                /></a>
+              </li>
+              <li class="nav-items">
+                <a href="#"
+                  ><input type="button" value="Sign-Up" class="btn btn-signup"
+                /></a>
+              </li>
+            </div>
+
+            <span class="menu-icon"
+              ><img
+                src="../media/menu-bg-blue.png"
+                alt=""
+                id="hamberger"
+                class="hamburger-icon"
+            /></span>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <div>
+        <div>
+          <input type="button" value="filter" />
+        </div>
+        <div>
+          <select name="" id="">
+            sort by
+            <option value="">Most Popular</option>
+            <option value="">Highest Rated</option>
+            <option value="">Newest</option>
+          </select>
+        </div>
+        <div>
+          <span>10,000 Results</span>
+        </div>
+        <div class="courses">
+          <div class="filter-course">
+            <h2>Filters</h2>
+            <div class="ratings-filter">
+              <h3>Ratings</h3>
+              <ul>
+                <li>
+                  <input type="radio" name="ratings" id="" /> ★★★★⯪ 4.5 & Up
+                </li>
+                <li><input type="radio" name="ratings" id="" />★★★★☆ 4 & Up</li>
+                <li>
+                  <input type="radio" name="ratings" id="" />★★★⯪☆3.5 & Up
+                </li>
+                <li>
+                  <input type="radio" name="ratings" id="" />★★★☆☆3.0 & Up
+                </li>
+              </ul>
+            </div>
+            <div class="language-filter">
+              <h3>Languages</h3>
+              <ul>
+                <li><input type="checkbox" name="" id="" />Hindi</li>
+                <li><input type="checkbox" name="" id="" />English</li>
+                <li><input type="checkbox" name="" id="" />Spenish</li>
+                <li><input type="checkbox" name="" id="" />French</li>
+              </ul>
+            </div>
+            <div class="topics-filter">
+              <h3>Topics</h3>
+              <ul>
+                <li><input type="checkbox" name="" id="" />JavaScript</li>
+                <li><input type="checkbox" name="" id="" />Python</li>
+                <li><input type="checkbox" name="" id="" />Java</li>
+                <li><input type="checkbox" name="" id="" />Web development</li>
+              </ul>
+            </div>
+            <div class="subcategory-filter">
+              <h3>Subcategory</h3>
+              <ul>
+                <li><input type="checkbox" name="" id="" />Web Development</li>
+                <li>
+                  <input type="checkbox" name="" id="" />Programming Languages
+                </li>
+                <li><input type="checkbox" name="" id="" />Data Science</li>
+                <li><input type="checkbox" name="" id="" />Game Development</li>
+              </ul>
+            </div>
+          </div>
+          <div class="courses-grid">
+            <div class="course-card">
+              <div>
+                <img
+                  src="../media/courses/data science.jpeg"
+                  alt="Data Science"
+                  class="course-image"
+                />
+              </div>
+
+              <div>
+                <h3>
+                  <span class="course-title"
+                    >Digital Marketing Blueprint: Grow Any Brand from
+                    Scratch</span
+                  >
+                </h3>
+              </div>
+              <div>
+                <span class="instructor-name">Meven Analyst </span>
+              </div>
+              <div>
+                <span class="ratings">4.0 ★★★★☆ </span
+                ><span class="rating-count">(16,302)</span>
+              </div>
+              <div>
+                <span class="duration-level"
+                  >5.7 total hours. 35 lectures. Beginner</span
+                >
+              </div>
+              <div>
+                <span class="price">₹4,000.00</span>
+                <span class="price-strikethrough">₹4,00,000.00</span
+                ><span
+                  ><input
+                    type="button"
+                    value="View Details"
+                    class="btn detail-btn"
+                /></span>
+              </div>
+            </div>
+            <div class="course-card">
+              <div>
+                <img
+                  src="../media/courses/digital marketing.jpeg"
+                  alt="Data Science"
+                  class="course-image"
+                />
+              </div>
+
+              <div>
+                <h3>
+                  <span class="course-title"
+                    >iOS & Swift - The Complete iOS App Development
+                    Bootcamp</span
+                  >
+                </h3>
+              </div>
+              <div>
+                <span class="instructor-name">Meven Analyst </span>
+              </div>
+              <div>
+                <span class="ratings">4.5 ★★★⯪☆ </span
+                ><span class="rating-count">(16,302)</span>
+              </div>
+              <div>
+                <span class="duration-level"
+                  >5.5 total hours. 40 lectures. Intermediate</span
+                >
+              </div>
+              <div>
+                <span class="price">₹400.00</span>
+                <span class="price-strikethrough">₹4,00,000.00</span
+                ><span
+                  ><input
+                    type="button"
+                    value="View Details"
+                    class="btn detail-btn"
+                /></span>
+              </div>
+            </div>
+            <div class="course-card">
+              <div>
+                <img
+                  src="../media/courses/backend.png"
+                  alt="Data Science"
+                  class="course-image"
+                />
+              </div>
+
+              <div>
+                <h3>
+                  <span class="course-title"
+                    >Cloud Computing Essentials: Build Your First Scalable
+                    App</span
+                  >
+                </h3>
+              </div>
+              <div>
+                <span class="instructor-name">Code with Harry </span>
+              </div>
+              <div>
+                <span class="ratings">4.5 ★★★⯪☆ </span
+                ><span class="rating-count">(17,802)</span>
+              </div>
+              <div>
+                <span class="duration-level"
+                  >6.0 total hours. 35 lectures. Beginner</span
+                >
+              </div>
+              <div>
+                <span class="price">₹340.00</span>
+                <span class="price-strikethrough">₹4,000.00</span
+                ><span
+                  ><input
+                    type="button"
+                    value="View Details"
+                    class="btn detail-btn"
+                /></span>
+              </div>
+            </div>
+            <div class="course-card">
+              <div>
+                <img
+                  src="../media/courses/frontend web dev.jpeg"
+                  alt="Data Science"
+                  class="course-image"
+                />
+              </div>
+
+              <div>
+                <h3>
+                  <span class="course-title"
+                    >Management & Ability Electives</span
+                  >
+                </h3>
+              </div>
+              <div>
+                <span class="instructor-name">Meven Analyst </span>
+              </div>
+              <div>
+                <span class="ratings">4.5 ★★★⯪☆ </span
+                ><span class="rating-count">(14,302)</span>
+              </div>
+              <div>
+                <span class="duration-level"
+                  >5.5 total hours. 35 lectures. Beginner</span
+                >
+              </div>
+              <div>
+                <span class="price">₹5,800.00</span>
+                <span class="price-strikethrough">₹5,000.00</span
+                ><span
+                  ><input
+                    type="button"
+                    value="View Details"
+                    class="btn detail-btn"
+                /></span>
+              </div>
+            </div>
+            <div class="course-card">
+              <div>
+                <img
+                  src="../media/courses/full stack-2.png"
+                  alt="Data Science"
+                  class="course-image"
+                />
+              </div>
+
+              <div>
+                <h3>
+                  <span class="course-title">Cloud Computing Essentials</span>
+                </h3>
+              </div>
+              <div>
+                <span class="instructor-name">Meven Analyst </span>
+              </div>
+              <div>
+                <span class="ratings">4.5 ★★★⯪☆ </span
+                ><span class="rating-count">(19,302)</span>
+              </div>
+              <div>
+                <span class="duration-level"
+                  >5.9 total hours. 39 lectures. Advance</span
+                >
+              </div>
+              <div>
+                <span class="price">₹900.00</span>
+                <span class="price-strikethrough">₹9,000.00</span
+                ><span
+                  ><input
+                    type="button"
+                    value="View Details"
+                    class="btn detail-btn"
+                /></span>
+              </div>
+            </div>
+            <div class="course-card">
+              <div>
+                <img
+                  src="../media/courses/personality development.jpeg"
+                  alt="Data Science"
+                  class="course-image"
+                />
+              </div>
+
+              <div>
+                <h3>
+                  <span class="course-title"
+                    >AI Programming in Python - Beginner
+                  </span>
+                </h3>
+              </div>
+              <div>
+                <span class="instructor-name">Meven Analyst </span>
+              </div>
+              <div>
+                <span class="ratings">4.5 ★★★⯪☆ </span
+                ><span class="rating-count">(46,302)</span>
+              </div>
+              <div>
+                <span class="duration-level"
+                  >5.5 total hours. 35 lectures. Beginner</span
+                >
+              </div>
+              <div>
+                <span class="price">₹600.00</span>
+                <span class="price-strikethrough">₹4,00,000.00</span
+                ><span
+                  ><input
+                    type="button"
+                    value="View Details"
+                    class="btn detail-btn"
+                /></span>
+              </div>
+            </div>
+            <div class="course-card">
+              <div>
+                <img
+                  src="../media/courses/web dev.jpeg"
+                  alt="Data Science"
+                  class="course-image"
+                />
+              </div>
+
+              <div>
+                <h3>
+                  <span class="course-title"
+                    >AI & Machine Learning Foundations</span
+                  >
+                </h3>
+              </div>
+              <div>
+                <span class="instructor-name">Meven Analyst </span>
+              </div>
+              <div>
+                <span class="ratings">4.5 ★★★⯪☆ </span
+                ><span class="rating-count">(26,302)</span>
+              </div>
+              <div>
+                <span class="duration-level"
+                  >5.5 total hours. 35 lectures. Beginner</span
+                >
+              </div>
+              <div>
+                <span class="price">₹599.00</span>
+                <span class="price-strikethrough">₹4,00,000.00</span>
+                <span
+                  ><input
+                    type="button"
+                    value="View Details"
+                    class="btn detail-btn"
+                /></span>
+              </div>
+            </div>
+
+            <div class="course-card">
+              <div>
+                <img
+                  src="../media/courses/full stack.jpeg"
+                  alt="Data Science"
+                  class="course-image"
+                />
+              </div>
+
+              <div>
+                <h3>
+                  <span class="course-title"
+                    >Cybersecurity & Ethical Hacking</span
+                  >
+                </h3>
+              </div>
+              <div>
+                <span class="instructor-name">Meven Analyst </span>
+              </div>
+              <div>
+                <span class="ratings">4.5 ★★★⯪☆ </span
+                ><span class="rating-count">(2,302)</span>
+              </div>
+              <div>
+                <span class="duration-level"
+                  >5.5 total hours. 35 lectures. Beginner</span
+                >
+              </div>
+              <div>
+                <span class="price">₹800.00</span>
+                <span class="price-strikethrough">₹4,00,000.00</span>
+                <span
+                  ><input
+                    type="button"
+                    value="View Details"
+                    class="btn detail-btn"
+                /></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="left-footer">
+          <span
+            ><img src="../media/logo.png" alt="footer-logo" class="logo-footer"
+          /></span>
+          <span class="footer-description"
+            >Empowering student with quality education and trusted guidance
+            since 2004.
+          </span>
+          <ul class="social-icons-list">
+            <li class="insta">
+              <a href="#"><img src="../media/insta.png" alt="insta-icon" /></a>
+            </li>
+            <li class="youtube">
+              <a href="#"
+                ><img src="../media/youtube.png" alt="youtube-icon"
+              /></a>
+            </li>
+            <li class="linkdin">
+              <a href="#"
+                ><img src="../media/linkdin.png" alt="linkdin-icon"
+              /></a>
+            </li>
+            <li class="facebook">
+              <a href="#"
+                ><img src="../media/facebook.png" alt="facebook-icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li>About Us</li>
+            <li>Courses</li>
+            <li>Results</li>
+            <li>Faculty</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Our Courses</h3>
+          <ul class="footer-courses-list">
+            <li>Cybersecurity</li>
+            <li>Web Development</li>
+            <li>Machine learning</li>
+            <li>Digital Marketing</li>
+            <li>Android Developer</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <ul class="contact-footer">
+            <li class="icon-lists">
+              <span class="phone-icon"
+                ><img src="../media/phone.png" alt="Phone" /></span
+              ><span class="phone">+91 9876543210</span>
+            </li>
+            <li icon-lists>
+              <span class="email-icon"
+                ><img src="../media/envelope.png" alt="Email" /></span
+              ><span class="email">samples@gmail.com</span>
+            </li>
+            <li icon-lists>
+              <span class="address-icon"
+                ><img src="../media/location.png" alt="Address" /></span
+              ><span class="address"
+                >323, Education street, your city ,india-400230</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="Newsletter-div">
+          <h3>Newsletter</h3>
+          <span class="subscribe-line"
+            >Subscribe to our Newsletter for latest updates and tips</span
+          >
+          <span
+            ><input
+              type="text"
+              placeholder="Enter Your Email"
+              class="subscribe-input" />
+            <span
+              ><img src="../media/arrow.png" alt="" class="submit-icon" /></span
+          ></span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

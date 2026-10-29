@@ -19,44 +19,45 @@
         <!-- <nav class="bg-cyan-950 flex justify-center gap-80 item-center px-2 py-4"> -->
         <div class="logo">
           <span>
-            <img
-              src="../media/logo.png"
-              alt="EduConnect-Logo"
-              srcset=""
-            /> </span
+            <a href="#"
+              ><img
+                src="../media/logo.png"
+                alt="EduConnect-Logo"
+                srcset=""
+              /> </a></span
           ><span><h4>EduConnect</h4></span>
         </div>
-
         <div>
           <ul class="nav-lists">
             <div class="center-nav">
               <li class="nav-items"><a href="#">Home</a></li>
-              <li class="nav-items"><a href="#">Courses</a></li>
-              <li class="nav-items"><a href="#">Registration Form</a></li>
+              <li class="nav-items">
+                <a href="../pages/CourseListingPage.html">Courses</a>
+              </li>
+              <li class="nav-items"><a href="#">About Us</a></li>
+              <li class="nav-items"><a href="#">Contact</a></li>
             </div>
 
             <div class="right-nav">
-              <li class="nav-items">
-                <span
-                  ><input
-                    type="search"
-                    name=""
-                    id=""
-                    placeholder="Search"
-                    class="search"
-                /></span>
-              </li>
               <li class="nav-items">
                 <a href="#"
                   ><input type="button" value="Login" class="btn btn-login"
                 /></a>
               </li>
               <li class="nav-items">
-                <a href="#"
+                <a href="../pages/RegistratioPage.html"
                   ><input type="button" value="Sign-Up" class="btn btn-signup"
                 /></a>
               </li>
             </div>
+
+            <span class="menu-icon"
+              ><img
+                src="../media/menu-bg-blue.png"
+                alt=""
+                id="hamberger"
+                class="hamburger-icon"
+            /></span>
           </ul>
         </div>
       </nav>
@@ -72,6 +73,14 @@
               >Expert guidance, Smart strategies. Personal attention. Your
               success is our mission</span
             >
+            <span class="search-bar"
+              ><input
+                type="search"
+                name=""
+                id=""
+                placeholder="Search"
+                class="search"
+            /></span>
           </div>
           <div class="left-section-btn">
             <input
@@ -381,15 +390,29 @@
           <span
             ><img src="../media/logo.png" alt="footer-logo" class="logo-footer"
           /></span>
-          <span
+          <span class="footer-description"
             >Empowering student with quality education and trusted guidance
             since 2004.
           </span>
           <ul class="social-icons-list">
-            <li class="insta"><img src="../media/insta.png" alt="" /></li>
-            <li class="youtube"><img src="../media/youtube.png" alt="" /></li>
-            <li class="linkdin"><img src="../media/linkdin.png" alt="" /></li>
-            <li class="facebook"><img src="../media/facebook.png" alt="" /></li>
+            <li class="insta">
+              <a href="#"><img src="../media/insta.png" alt="insta-icon" /></a>
+            </li>
+            <li class="youtube">
+              <a href="#"
+                ><img src="../media/youtube.png" alt="youtube-icon"
+              /></a>
+            </li>
+            <li class="linkdin">
+              <a href="#"
+                ><img src="../media/linkdin.png" alt="linkdin-icon"
+              /></a>
+            </li>
+            <li class="facebook">
+              <a href="#"
+                ><img src="../media/facebook.png" alt="facebook-icon"
+              /></a>
+            </li>
           </ul>
         </div>
         <div>
@@ -415,24 +438,38 @@
         <div>
           <h3>Contact Us</h3>
           <ul class="contact-footer">
-            <li>
-              <span class="phone-icon"><img src="" alt="" /></span
-              ><span>+91 9876543210</span>
+            <li class="icon-lists">
+              <span class="phone-icon"
+                ><img src="../media/phone.png" alt="Phone" /></span
+              ><span class="phone">+91 9876543210</span>
             </li>
-            <li>
-              <span class="email-icon"><img src="" alt="" /></span
-              ><span>samples@gmail.com</span>
+            <li icon-lists>
+              <span class="email-icon"
+                ><img src="../media/envelope.png" alt="Email" /></span
+              ><span class="email">samples@gmail.com</span>
             </li>
-            <li>
-              <span class="email-icon"><img src="" alt="" /></span
-              ><span>323, Education street, your city ,india-400230</span>
+            <li icon-lists>
+              <span class="address-icon"
+                ><img src="../media/location.png" alt="Address" /></span
+              ><span class="address"
+                >323, Education street, your city ,india-400230</span
+              >
             </li>
           </ul>
         </div>
-        <div>
+        <div class="Newsletter-div">
           <h3>Newsletter</h3>
-          <span>Subscribe to our Newsletter for latest updates and tips</span>
-          <span><input type="text" placeholder="Enter Your Email" /></span>
+          <span class="subscribe-line"
+            >Subscribe to our Newsletter for latest updates and tips</span
+          >
+          <span
+            ><input
+              type="text"
+              placeholder="Enter Your Email"
+              class="subscribe-input" />
+            <span
+              ><img src="../media/arrow.png" alt="" class="submit-icon" /></span
+          ></span>
         </div>
       </footer>
     </main>

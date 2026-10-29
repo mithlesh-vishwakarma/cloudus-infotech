@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <title>EduConnect</title>
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <!-- <nav class="bg-cyan-950 flex justify-center gap-80 item-center px-2 py-4"> -->
+        <div class="logo">
+          <span>
+            <a href="#"
+              ><img
+                src="../media/logo.png"
+                alt="EduConnect-Logo"
+                srcset=""
+              /> </a></span
+          ><span><h4>EduConnect</h4></span>
+        </div>
+
+        <div>
+          <ul class="nav-lists">
+            <div class="center-nav">
+              <li class="nav-items"><a href="#">Home</a></li>
+              <li class="nav-items">
+                <a href="../pages/CourseListingPage.html">Courses</a>
+              </li>
+              <li class="nav-items"><a href="#">About Us</a></li>
+              <li class="nav-items"><a href="#">Contact</a></li>
+            </div>
+
+            <div class="right-nav">
+              <li class="nav-items">
+                <a href="#"
+                  ><input type="button" value="Login" class="btn btn-login"
+                /></a>
+              </li>
+              <li class="nav-items">
+                <a href="#"
+                  ><input type="button" value="Sign-Up" class="btn btn-signup"
+                /></a>
+              </li>
+            </div>
+
+            <span class="menu-icon"
+              ><img
+                src="../media/menu-bg-blue.png"
+                alt=""
+                id="hamberger"
+                class="hamburger-icon"
+            /></span>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="main-container">
+      <div>
+        <h3>Student Registration Form :</h3>
+        <fieldset>
+          <legend>Registration Form</legend>
+          <form action="">
+            <h4>Student information</h4>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Middle Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="date" name="" id="" placeholder="Date Of Birth" />
+            <input type="number" placeholder="Student ID" />
+            Gender: Male<input type="radio" name="gender" id="" />Female
+            <input type="radio" name="gender" id="" />
+
+            <h4>Address</h4>
+            <input type="text" placeholder="Street address" />
+            <input type="text" placeholder="City" />
+            <input type="text" placeholder="State" />
+            <input type="text" placeholder="Country" />
+            <input type="text" placeholder="ZipCode" />
+            <h4>Contact information</h4>
+            <input type="email" placeholder="Email" />
+            <input type="number" name="" id="" placeholder="Phone Number" />
+            <h4>Courses</h4>
+            <select name="" id="">
+              <option value="" selected>--- select courses ---</option>
+              <option value="">Java fulll stack</option>
+              <option value="">Python Full stack</option>
+              <option value="">MERN Full Stack</option>
+              <option value="">Front-End only</option>
+              <option value="">Machine Learning</option>
+              <option value="">Business Analyst</option>
+            </select>
+            <input
+              type="file"
+              name=""
+              id=""
+              placeholder="Student Passpport size Photo"
+            />
+            <input type="button" value="Cancel" />
+            <input type="reset" value="Reset" />
+            <input type="submit" value="Submit" />
+          </form>
+        </fieldset>
+      </div>
+
+      <footer>
+        <div class="left-footer">
+          <span
+            ><img src="../media/logo.png" alt="footer-logo" class="logo-footer"
+          /></span>
+          <span class="footer-description"
+            >Empowering student with quality education and trusted guidance
+            since 2004.
+          </span>
+          <ul class="social-icons-list">
+            <li class="insta">
+              <a href="#"><img src="../media/insta.png" alt="insta-icon" /></a>
+            </li>
+            <li class="youtube">
+              <a href="#"
+                ><img src="../media/youtube.png" alt="youtube-icon"
+              /></a>
+            </li>
+            <li class="linkdin">
+              <a href="#"
+                ><img src="../media/linkdin.png" alt="linkdin-icon"
+              /></a>
+            </li>
+            <li class="facebook">
+              <a href="#"
+                ><img src="../media/facebook.png" alt="facebook-icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul class="quick-links">
+            <li>About Us</li>
+            <li>Courses</li>
+            <li>Results</li>
+            <li>Faculty</li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Our Courses</h3>
+          <ul class="footer-courses-list">
+            <li>Cybersecurity</li>
+            <li>Web Development</li>
+            <li>Machine learning</li>
+            <li>Digital Marketing</li>
+            <li>Android Developer</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <ul class="contact-footer">
+            <li class="icon-lists">
+              <span class="phone-icon"
+                ><img src="../media/phone.png" alt="Phone" /></span
+              ><span class="phone">+91 9876543210</span>
+            </li>
+            <li icon-lists>
+              <span class="email-icon"
+                ><img src="../media/envelope.png" alt="Email" /></span
+              ><span class="email">samples@gmail.com</span>
+            </li>
+            <li icon-lists>
+              <span class="address-icon"
+                ><img src="../media/location.png" alt="Address" /></span
+              ><span class="address"
+                >323, Education street, your city ,india-400230</span
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="Newsletter-div">
+          <h3>Newsletter</h3>
+          <span class="subscribe-line"
+            >Subscribe to our Newsletter for latest updates and tips</span
+          >
+          <span
+            ><input
+              type="text"
+              placeholder="Enter Your Email"
+              class="subscribe-input" />
+            <span
+              ><img src="../media/arrow.png" alt="" class="submit-icon" /></span
+          ></span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>
