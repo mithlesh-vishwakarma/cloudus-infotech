@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <title>EduConnect</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="../styles/style.css" />
     <link rel="stylesheet" href="../styles/header.css" />
     <link rel="stylesheet" href="../styles/registrationForm.css" />
@@ -67,77 +68,155 @@
     </header>
 
     <!-- Registration form -->
-    <main class="main-container registration-page">
+    <main class="max-w-4xl !mx-auto !px-4 !py-8">
       <div>
-        <h3>Student Registration Form :</h3>
-        <fieldset class="registration-form">
-          <legend>Registration Form</legend>
-          <form action="">
-            <h4>Student information</h4>
-            <input class="form-input" type="text" placeholder="First Name" />
-            <input class="form-input" type="text" placeholder="Middle Name" />
-            <input class="form-input" type="text" placeholder="Last Name" />
-            <input
-              class="form-input"
-              type="date"
-              name=""
-              id=""
-              placeholder="Date Of Birth"
-            />
-            <input class="form-input" type="number" placeholder="Student ID" />
-            Gender: Male<input
-              class="radio-input"
-              type="radio"
-              name="gender"
-              id=""
-            />Female
-            <input class="radio-input" type="radio" name="gender" id="" />
+        <form class="!mx-auto rounded-lg bg-white !p-3" action="">
+          <fieldset class="border border-gray-300 rounded-lg !p-6">
+            <legend class="text-2xl font-semibold">Registration Form</legend>
+            <h4 class="text-xl">Student information</h4>
+            <div class="flex flex-wrap gap-4 !p-2">
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="text"
+                placeholder="First Name"
+              />
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="text"
+                placeholder="Middle Name"
+              />
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="text"
+                placeholder="Last Name"
+              />
+            </div>
+            <div
+              class="flex flex-wrap gap-4 items-center !p-2 border-b-2 border-gray-100 !mb-4"
+            >
+              <input
+                class="border rounded-lg border-gray-300 cursor-pointer !p-2"
+                type="date"
+                name=""
+                id=""
+                placeholder="Date Of Birth"
+              />
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="number"
+                placeholder="Student ID"
+              />
+              Gender: <span class="text-md text-gray-600">Male</span
+              ><input
+                class="!p-4 cursor-pointer"
+                type="radio"
+                name="gender"
+                id=""
+              /><span class="text-md text-gray-600">Female</span>
+              <input
+                class="!p-4 cursor-pointer"
+                type="radio"
+                name="gender"
+                id=""
+              />
+            </div>
 
-            <h4>Address</h4>
-            <input
-              class="form-input"
-              type="text"
-              placeholder="Street address"
-            />
-            <input class="form-input" type="text" placeholder="City" />
-            <input class="form-input" type="text" placeholder="State" />
-            <input class="form-input" type="text" placeholder="Country" />
-            <input class="form-input" type="text" placeholder="ZipCode" />
-            <h4>Contact information</h4>
-            <input class="form-input" type="email" placeholder="Email" />
-            <input
-              class="form-input"
-              type="number"
-              name=""
-              id=""
-              placeholder="Phone Number"
-            />
-            <h4>Courses</h4>
-            <select class="form-input" name="" id="">
-              <option value="" selected>--- select courses ---</option>
-              <option value="">Java fulll stack</option>
-              <option value="">Python Full stack</option>
-              <option value="">MERN Full Stack</option>
-              <option value="">Front-End only</option>
-              <option value="">Machine Learning</option>
-              <option value="">Business Analyst</option>
-            </select>
-            <input
-              class="form-input"
-              type="file"
-              name=""
-              id=""
-              placeholder="Student Passpport size Photo"
-            />
-            <input class="form-button" type="button" value="Cancel" />
-            <input class="form-button" type="reset" value="Reset" />
-            <input
-              class="form-button submit-button"
-              type="submit"
-              value="Submit"
-            />
-          </form>
-        </fieldset>
+            <h4 class="text-xl">Address</h4>
+
+            <div
+              class="flex flex-wrap gap-4 items-center !p-2 border-b-2 border-gray-100 !mb-4"
+            >
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="text"
+                placeholder="Street address"
+              />
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="text"
+                placeholder="City"
+              />
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="text"
+                placeholder="State"
+              />
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="text"
+                placeholder="Country"
+              />
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="text"
+                placeholder="ZipCode"
+              />
+            </div>
+
+            <h4 class="text-xl">Contact information</h4>
+            <div
+              class="flex flex-wrap gap-4 !p-2 border-b-2 border-gray-100 !mb-4"
+            >
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="email"
+                placeholder="Email"
+              />
+              <input
+                class="border rounded-lg border-gray-300 !p-2"
+                type="number"
+                name=""
+                id=""
+                placeholder="Phone Number"
+              />
+            </div>
+            <h4 class="text-xl">Courses</h4>
+            <div class="flex gap-8 !p-2 !mb-4">
+              <select
+                class="text-sm text-gray-600 !p-2 border rounded-lg border-gray-300 cursor-pointer"
+                name=""
+                id=""
+              >
+                <option value="" selected>--- select courses ---</option>
+                <option value="">Java fulll stack</option>
+                <option value="">Python Full stack</option>
+                <option value="">MERN Full Stack</option>
+                <option value="">Front-End only</option>
+                <option value="">Machine Learning</option>
+                <option value="">Business Analyst</option>
+              </select>
+              <input
+                class="block w-full text-sm text-slate-500 file:!mr-4 file:!py-2 file:!px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-violet-50 file:text-violet-700 hover:file:bg-violet-100 cursor-pointer"
+                type="file"
+                name=""
+                id=""
+              />
+            </div>
+            <div class="flex flex-wrap justify-center items-center gap-6">
+              <div class="!p-2">
+                <input
+                  class="!p-2 !px-4 bg-red-600 hover:bg-red-700 text-white font-medium rounded-md shadow-sm transition-colors duration-200 cursor-pointer"
+                  type="button"
+                  value="Cancel"
+                />
+              </div>
+              <div>
+                <input
+                  class="!p-2 !px-4 bg-gray-600 hover:bg-gray-700 text-white font-medium rounded-md shadow-sm transition-colors duration-200 cursor-pointer"
+                  type="reset"
+                  value="Reset"
+                />
+              </div>
+              <div>
+                <input
+                  class="!p-2 !px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-md shadow-sm transition-colors duration-200 cursor-pointer"
+                  type="submit"
+                  value="Submit"
+                />
+              </div>
+            </div>
+          </fieldset>
+        </form>
       </div>
     </main>
 
