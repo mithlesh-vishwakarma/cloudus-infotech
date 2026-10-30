@@ -1,0 +1,54 @@
+/* Registration form layout */
+.registration-page {
+  max-width: 1152px;
+  margin: 0 auto;
+  padding: 40px 24px 60px;
+}
+
+.registration-form {
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  max-width: 850px;
+  padding: 24px;
+}
+
+.registration-form legend {
+  color: #090947;
+  font-weight: 700;
+  padding: 0 8px;
+}
+
+.registration-form form {
+  display: grid;
+  gap: 14px;
+}
+
+.registration-form h4 {
+  color: #090947;
+  margin-top: 10px;
+}
+
+.form-input {
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  min-height: 42px;
+  padding: 10px;
+  width: 100%;
+}
+
+.radio-input {
+  margin: 0 8px;
+}
+
+.form-button {
+  border: 1px solid #cbd5e1;
+  border-radius: 5px;
+  cursor: pointer;
+  min-height: 42px;
+  padding: 10px;
+}
+
+.submit-button {
+  background-color: #090947;
+  color: #ffffff;
+}

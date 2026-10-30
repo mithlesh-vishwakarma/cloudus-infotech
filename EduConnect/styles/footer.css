@@ -1,0 +1,138 @@
+/* Shared site footer */
+footer {
+  background-color: rgba(9, 9, 71, 0.9);
+  color: #fff;
+  width: 100%;
+}
+
+.footer-content {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  padding: 30px 24px;
+  max-width: 1152px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+footer h3 {
+  margin-bottom: 12px;
+}
+.left-footer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.logo-footer {
+  height: 60px;
+  width: 100px;
+}
+.footer-description,
+.subscribe-line {
+  line-height: 1.6;
+}
+.social-icons-list {
+  display: flex;
+  gap: 10px;
+  list-style: none;
+  /* margin-top: 12px; */
+  align-items: center;
+}
+.social-icons-list li {
+  background: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+
+  padding: 2px;
+}
+.social-icons-list li:hover,
+.submit-icon:hover {
+  background-color: rgb(204, 204, 28);
+}
+.social-icons-list img {
+  height: 30px;
+  width: 30px;
+}
+.quick-links,
+.footer-courses-list,
+.contact-footer {
+  line-height: 2;
+  list-style: none;
+}
+.icon-lists {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.phone-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.email-icon > img {
+  width: 10px;
+  height: 10px;
+}
+.email-icon {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  gap: 2px;
+}
+.address-icon {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 4px;
+}
+
+.contact-footer img {
+  height: 20px;
+  width: 20px;
+}
+.Newsletter-div {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subscribe-input {
+  border: 1px solid darkblue;
+  border-radius: 15px;
+  margin-top: 5px;
+  padding: 10px;
+  width: min(100%, 200px);
+}
+.subs-things {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.submit-icon {
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  margin: 12px 0 0 8px;
+  padding: 1px;
+  vertical-align: middle;
+  width: 30px;
+}
+
+@media (max-width: 1100px) {
+  .footer-content {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+@media (max-width: 700px) {
+  .footer-content {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 450px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+}

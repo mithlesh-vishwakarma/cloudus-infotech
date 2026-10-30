@@ -9,14 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
       rel="stylesheet"
     />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
     <title>EduConnect</title>
     <link rel="stylesheet" href="../styles/style.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/courseCard.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
   </head>
   <body>
+    <!-- Site header -->
     <header>
       <nav class="navbar">
-        <!-- <nav class="bg-cyan-950 flex justify-center gap-80 item-center px-2 py-4"> -->
         <div class="logo">
           <span>
             <a href="#"
@@ -28,28 +30,28 @@
           ><span><h4>EduConnect</h4></span>
         </div>
         <div>
-          <ul class="nav-lists">
-            <div class="center-nav">
+          <div class="nav-lists">
+            <ul class="center-nav">
               <li class="nav-items"><a href="#">Home</a></li>
               <li class="nav-items">
                 <a href="../pages/CourseListingPage.html">Courses</a>
               </li>
               <li class="nav-items"><a href="#">About Us</a></li>
               <li class="nav-items"><a href="#">Contact</a></li>
-            </div>
+            </ul>
 
-            <div class="right-nav">
+            <ul class="right-nav">
               <li class="nav-items">
                 <a href="#"
                   ><input type="button" value="Login" class="btn btn-login"
                 /></a>
               </li>
               <li class="nav-items">
-                <a href="../pages/RegistratioPage.html"
+                <a href="#"
                   ><input type="button" value="Sign-Up" class="btn btn-signup"
                 /></a>
               </li>
-            </div>
+            </ul>
 
             <span class="menu-icon"
               ><img
@@ -58,13 +60,14 @@
                 id="hamberger"
                 class="hamburger-icon"
             /></span>
-          </ul>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="main-container">
-      <div class="hero-section">
+    <!-- Hero section -->
+    <section class="hero-section">
+      <div class="hero-content">
         <div class="left-section">
           <div class="title">
             <h1><span class="title-first">Better Learning</span></h1>
@@ -94,11 +97,14 @@
         <div class="right-section">
           <div class="right-section-experiance-stat">
             <div><h1>20 +</h1></div>
-            <div><span>YEARS OF EXECELLENCE</span></div>
+            <div><span>YEARS OF EXCELLENCE</span></div>
           </div>
         </div>
       </div>
+    </section>
 
+    <!-- Course cards -->
+    <main class="main-container">
       <div class="courses-grid">
         <div class="course-card">
           <div>
@@ -385,7 +391,11 @@
         </div>
       </div>
 
+    </main>
+
+    <!-- Site footer -->
       <footer>
+        <div class="footer-content">
         <div class="left-footer">
           <span
             ><img src="../media/logo.png" alt="footer-logo" class="logo-footer"
@@ -443,12 +453,12 @@
                 ><img src="../media/phone.png" alt="Phone" /></span
               ><span class="phone">+91 9876543210</span>
             </li>
-            <li icon-lists>
+            <li class="icon-lists">
               <span class="email-icon"
                 ><img src="../media/envelope.png" alt="Email" /></span
               ><span class="email">samples@gmail.com</span>
             </li>
-            <li icon-lists>
+            <li class="icon-lists">
               <span class="address-icon"
                 ><img src="../media/location.png" alt="Address" /></span
               ><span class="address"
@@ -471,7 +481,7 @@
               ><img src="../media/arrow.png" alt="" class="submit-icon" /></span
           ></span>
         </div>
+        </div>
       </footer>
-    </main>
   </body>
 </html>

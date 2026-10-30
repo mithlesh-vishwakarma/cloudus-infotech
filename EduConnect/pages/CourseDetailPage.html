@@ -9,15 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap"
       rel="stylesheet"
     />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>EduConnect</title>
-    <link rel="stylesheet" href="../styles/style.css" />
-    <link rel="stylesheet" href="../styles/" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="../styles/header.css" />
+    <link rel="stylesheet" href="../styles/courseDetailPage.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
   </head>
   <body>
+    <!-- Site header -->
     <header>
       <nav class="navbar">
-        <!-- <nav class="bg-cyan-950 flex justify-center gap-80 item-center px-2 py-4"> -->
         <div class="logo">
           <span>
             <a href="#"
@@ -30,17 +31,17 @@
         </div>
 
         <div>
-          <ul class="nav-lists">
-            <div class="center-nav">
-              <li class="nav-items"><a href="#">Home</a></li>
+          <div class="nav-lists">
+            <ul class="center-nav">
+              <li class="nav-items"><a href="../pages/index.html">Home</a></li>
               <li class="nav-items">
                 <a href="../pages/CourseListingPage.html">Courses</a>
               </li>
               <li class="nav-items"><a href="#">About Us</a></li>
               <li class="nav-items"><a href="#">Contact</a></li>
-            </div>
+            </ul>
 
-            <div class="right-nav">
+            <ul class="right-nav">
               <li class="nav-items">
                 <a href="#"
                   ><input type="button" value="Login" class="btn btn-login"
@@ -51,7 +52,7 @@
                   ><input type="button" value="Sign-Up" class="btn btn-signup"
                 /></a>
               </li>
-            </div>
+            </ul>
 
             <span class="menu-icon"
               ><img
@@ -60,15 +61,18 @@
                 id="hamberger"
                 class="hamburger-icon"
             /></span>
-          </ul>
+          </div>
         </div>
       </nav>
     </header>
 
-    <main class="main-container">
-      <div>
-        <div class="">
-          <h2>Title:Web Development with Maven become full stack Developer</h2>
+    <!-- Course detail content -->
+    <main class="course-detail max-w-6xl mx-auto px-4 py-8">
+      <div class="course-detail-content space-y-8">
+        <div class="course-summary rounded bg-gray-100 p-6">
+          <h2 class="text-2xl font-bold">
+            Web Development with Maven become full stack Developer
+          </h2>
           <p>
             description Lorem ipsum dolor sit amet, consectetur adipisicing
             elit. Consectetur quas saepe temporibus inventore earum omnis
@@ -76,25 +80,42 @@
             reprehenderit veritatis, dicta commodi odio nesciunt. Mollitia,
             provident!
           </p>
-          <span>created By: <a href="">Mithlesh Vishwakarma</a></span>
-          <span>Last Updated on: 29-10-2026</span>
-          <span>English</span>
-        </div>
-        <div>
-          <div class="stats">
-            <div>premium course</div>
-            <div>
-              <span>4.8</span><span>★★★★★</span><span>475,759 ratings</span>
-            </div>
-            <div>
-              <img src="" alt="" />
-              <span>1,595,259</span>
-              <span>lerners</span>
-            </div>
+          <div class="flex flex-wrap items-center gap-6">
+            <span class="font-bold"
+              >created By: <a href="">Mithlesh Vishwakarma</a></span
+            >
+            <span class="font-medium text-gray-700"
+              >Last Updated on: 29-10-2026</span
+            >
+            <span class="font-semibold text-gray-600">English</span>
           </div>
         </div>
         <div>
-          <h3>What you'll Learn</h3>
+          <div
+            class="course-stats flex flex-wrap justify-between items-center rounded bg-gray-100 p-4"
+          >
+            <div class="flex flex-col flex-wrap justify-center items-center">
+              <div>
+                <img class="h-20 w-20" src="../media/premium.png" alt="" />
+              </div>
+              <div class="text-2xl text-yellow-600 font-bold">
+                Premium course
+              </div>
+            </div>
+            <div class="flex flex-wrap flex-col items-center font-bold">
+              <span class="text-xl text-yellow-600">4.8</span
+              ><span class="text-yellow-600">★★★★★</span
+              ><span>475,759 ratings</span>
+            </div>
+            <div class="flex flex-col flex-wrap justify-center items-center">
+              <img class="h-10 w-10" src="../media/group.png" alt="" />
+              <span class="text-2xl">1,595,259</span>
+              <span>Lerners</span>
+            </div>
+          </div>
+        </div>
+        <div class="course-section space-y-3">
+          <h3 class="text-xl font-bold">What you'll Learn</h3>
           <ul>
             <li>
               Build 16 web development projects for your portfolio, ready to
@@ -118,19 +139,19 @@
             <li>Learn professional developer best practices.</li>
           </ul>
         </div>
-        <div>
-          <h3>This Course Includes</h3>
-          <ul>
-            <li>35 hours on-demand video</li>
-            <li>8 coding Exercises</li>
-            <li>78 Articles</li>
-            <li>190 Downloadable resources</li>
+        <div class="course-section space-y-3">
+          <h3 class="text-xl font-bold">This Course Includes</h3>
+          <ul class="flex flex-wrap flex-col justify-center">
+            <li><span class="font-bold">35</span> hours on-demand video</li>
+            <li><span class="font-bold">8</span> coding Exercises</li>
+            <li><span class="font-bold">78</span> Articles</li>
+            <li><span class="font-bold">198</span> Downloadable resources</li>
             <li>Acces on tv and mobile</li>
             <li>certificates after completion</li>
           </ul>
         </div>
-        <div>
-          <h3>Requirements</h3>
+        <div class="course-section space-y-3">
+          <h3 class="text-xl font-bold">Requirements</h3>
           <ul>
             <li>
               Requirements No programming experience needed - I'll teach you
@@ -142,8 +163,8 @@
             <li>how to get all the software installed and set up</li>
           </ul>
         </div>
-        <div>
-          <h3>Description</h3>
+        <div class="course-section space-y-3">
+          <h3 class="text-xl font-bold">Description</h3>
           <p>
             Welcome to the Complete Web Development Bootcamp, the only course
             you need to learn to code and become a full-stack web developer.
@@ -207,47 +228,82 @@
             apps.
           </p>
         </div>
-        <div>
-          <h3>Instructor details</h3>
-          <span>Dr. Angela Yu, Developer and Lead Instructor</span>
-          <div class="left">
-            <span><img src="" alt="instructor-image" /></span>
+        <div class="instructor-details space-y-3">
+          <h3 class="text-xl font-bold">Instructor details</h3>
+          <span class="text-sm font-bold"
+            >Dr. Angela Yu, Developer and Lead Instructor</span
+          >
+          <div class="flex flex-wrap items-center p-6 text-gray-700">
+            <div>
+              <span
+                ><img
+                  class="h-50 w-50"
+                  src="../media/instructor-image.png"
+                  alt="instructor-image"
+              /></span>
+            </div>
+            <div>
+              <ul class="flex flex-col flex-wrap">
+                <li class="flex flex-wrap items-center gap-4">
+                  <span
+                    ><img
+                      class="w-5 h-5"
+                      src="../media/icons8-rating-64.png"
+                      alt=""
+                  /></span>
+                  <span>4.7 Instructor Rating</span>
+                </li>
+                <li class="flex flex-wrap items-center gap-4">
+                  <img
+                    class="w-5 h-5"
+                    src="../media/icons8-review-58.png"
+                    alt=""
+                  />
+                  <span>1,080,756 Reviews</span>
+                </li>
+                <li class="flex flex-wrap items-center gap-4">
+                  <img class="h-5 w-5" src="../media/group.png" alt="" />
+                  <span>3,573,805 Students</span>
+                </li>
+                <li class="flex flex-wrap items-center gap-4">
+                  <img
+                    class="w-5 h-5"
+                    src="../media/icons8-course-50.png"
+                    alt=""
+                  />
+                  <span> 8 Courses</span>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="right">
-            <ul>
-              <li>
-                <span><img src="" alt="" /></span>4.7 Instructor Rating
-              </li>
-              <li><img src="" alt="" />1,080,756 Reviews</li>
-              <li><img src="" alt="" /> 3,573,805 Students</li>
-              <li><img src="" alt="" /> 8 Courses</li>
-            </ul>
-            <p>
-              I'm Angela, I'm a developer with a passion for teaching. I'm the
-              lead instructor at the London App Brewery, London's leading
-              Programming Bootcamp. I've helped hundreds of thousands of
-              students learn to code and change their lives by becoming a
-              developer. I've been invited by companies such as Twitter,
-              Facebook and Google to teach their employees.
-            </p>
-            <p>
-              My first foray into programming was when I was just 12 years old,
-              wanting to build my own Space Invader game. Since then, I've made
-              hundred of websites, apps and games. But most importantly, I
-              realised that my greatest passion is teaching.
-            </p>
-            <p>
-              I spend most of my time researching how to make learning to code
-              fun and make hard concepts easy to understand. I apply everything
-              I discover into my bootcamp courses. In my courses, you'll find
-              lots of geeky humour but also lots of explanations and animations
-              to make sure everything is easy to understand.
-            </p>
-          </div>
+          <p>
+            I'm Angela, I'm a developer with a passion for teaching. I'm the
+            lead instructor at the London App Brewery, London's leading
+            Programming Bootcamp. I've helped hundreds of thousands of students
+            learn to code and change their lives by becoming a developer. I've
+            been invited by companies such as Twitter, Facebook and Google to
+            teach their employees.
+          </p>
+          <p>
+            My first foray into programming was when I was just 12 years old,
+            wanting to build my own Space Invader game. Since then, I've made
+            hundred of websites, apps and games. But most importantly, I
+            realised that my greatest passion is teaching.
+          </p>
+          <p>
+            I spend most of my time researching how to make learning to code fun
+            and make hard concepts easy to understand. I apply everything I
+            discover into my bootcamp courses. In my courses, you'll find lots
+            of geeky humour but also lots of explanations and animations to make
+            sure everything is easy to understand.
+          </p>
         </div>
       </div>
+    </main>
 
-      <footer>
+    <!-- Site footer -->
+    <footer>
+      <div class="footer-content">
         <div class="left-footer">
           <span
             ><img src="../media/logo.png" alt="footer-logo" class="logo-footer"
@@ -305,12 +361,12 @@
                 ><img src="../media/phone.png" alt="Phone" /></span
               ><span class="phone">+91 9876543210</span>
             </li>
-            <li icon-lists>
+            <li class="icon-lists">
               <span class="email-icon"
                 ><img src="../media/envelope.png" alt="Email" /></span
               ><span class="email">samples@gmail.com</span>
             </li>
-            <li icon-lists>
+            <li class="icon-lists">
               <span class="address-icon"
                 ><img src="../media/location.png" alt="Address" /></span
               ><span class="address"
@@ -333,7 +389,7 @@
               ><img src="../media/arrow.png" alt="" class="submit-icon" /></span
           ></span>
         </div>
-      </footer>
-    </main>
+      </div>
+    </footer>
   </body>
 </html>

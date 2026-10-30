@@ -1,0 +1,69 @@
+/* Shared course cards */
+.courses-grid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  padding: 50px 24px;
+}
+.course-card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  min-width: 0;
+}
+.course-image {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+.course-title {
+  display: block;
+  font-size: 16px;
+  line-height: 1.35;
+}
+.instructor-name,
+.rating-count,
+.duration-level {
+  color: #6b7280;
+}
+.instructor-name,
+.ratings,
+.rating-count {
+  font-size: 13px;
+}
+.ratings {
+  color: #acac00;
+}
+.duration-level {
+  font-size: 12px;
+}
+.price {
+  font-size: 18px;
+  font-weight: 700;
+}
+.price-strikethrough {
+  color: #6b7280;
+  margin-left: 6px;
+  text-decoration: line-through;
+}
+.detail-btn {
+  background-color: rgba(9, 9, 71, 0.9);
+  color: #fff;
+  margin: 8px 0 0 14px;
+}
+.detail-btn:hover {
+  background-color: #fff;
+  color: rgba(9, 9, 71, 0.9);
+}
+
+@media (max-width: 900px) {
+  .courses-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-inline: 24px;
+  }
+}
+@media (max-width: 520px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+}
